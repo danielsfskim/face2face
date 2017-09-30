@@ -1,5 +1,6 @@
 class Course < ApplicationRecord
   belongs_to :user
+  belongs_to :sections
 
   validates :title, presence: true
   validates :description, presence: true
